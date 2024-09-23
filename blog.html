@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" data-theme='light'>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate | Assignment 5</title>
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+  <!-- daisyUI and Tailwind cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          color: {
+            btnColor: '#B4F461'
+          },
+          fontFamily: {
+            lexend: ["Lexend", "sans-serif"],
+          },
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="font-lexend">
+  <header class="">
+    <div class="w-full">
+      <nav class="bg-[#F9F7F3] w-full">
+        <div class="navbar max-w-[1140px] mx-auto">
+          <div class="navbar-start">
+            <button id="home--btn" class="btn btn-warning px-7 py-0">Home</button>
+          </div>
+          <div class="navbar-center flex">
+            <ul class="menu menu-horizontal flex items-center px-1 gap-3">
+              <img src="./assets/logo.png" alt="logo" class="w-8">
+              <h1 class="text-lg font-bold hidden md:flex">Donate Bangladesh</h1>
+            </ul>
+          </div>
+          <div class="navbar-end flex gap-1 items-center">
+            <img src="./assets/coin.png" alt="balance" class="w-6">
+            <h3 class="text-[#111111B3] font-medium">5500 BDT</h3>
+          </div>
+        </div>
+      </nav>
+      <div class="h-10"></div>
+    </div>
+  </header>
+  <main class="max-w-[1140px] mx-auto flex flex-col gap-7 px-[2vw] my-8">
+    <h1 class="text-4xl font-bold">Important FAQ <img src="" alt="">
+    </h1>
+    <div class="collapse collapse-arrow bg-base-200">
+      <input type="radio" name="my-accordion-2" checked="checked" />
+      <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+      <div class="collapse-content">
+        <p>The DOM is a programming interface that represents a document's structure as a tree of objects, allowing for
+          dynamic manipulation of its content and structure.
+        </p>
+      </div>
+    </div>
+
+    
+    <div class="collapse collapse-arrow bg-base-200">
+      <input type="radio" name="my-accordion-2" />
+      <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+      <div class="collapse-content">
+        <p>Use methods like: <br>
+
+          document.getElementById('myId')<br>
+          document.getElementsByClassName('myClass')<br>
+          document.getElementsByTagName('div')<br>
+          document.querySelector('.myClass')
+        </p>
+      </div>
+    </div>
+    <div class="collapse collapse-arrow bg-base-200">
+      <input type="radio" name="my-accordion-2" />
+      <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it
+        useful?</div>
+      <div class="collapse-content">
+        <p>Event delegation attaches a single event listener to a parent element to manage events from child elements.
+          It's useful for performance, handling dynamic content, and simplifying code.</p>
+      </div>
+    </div>
+    <div class="collapse collapse-arrow bg-base-200">
+      <input type="radio" name="my-accordion-2" />
+      <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the
+        DOM?</div>
+      <div class="collapse-content">
+        <p>Attributes: <br>
+
+          Get: element.getAttribute('attrName')<br>
+          Set: element.setAttribute('attrName', 'value')<br>
+          Remove: element.removeAttribute('attrName')<br><br>
+          Styles:<br>
+
+          Set inline: element.style.propertyName = 'value'<br>
+          Add Class: element.classList.add('className')<br>
+          Remove Class: element.classList.remove('className')<br>
+          Toggle Class: element.classList.toggle('className')
+
+
+        </p>
+      </div>
+    </div>
+
+  </main>
+  <footer class="max-w-[1140px] mx-auto">
+
+  </footer>
+
+  <!-- <script src="./js/utilities/"></script> -->
+  <!-- <script src="./js/utilities/"></script> -->
+  <script src="./js/blog.js"></script>
+</body>
+
+</html>
