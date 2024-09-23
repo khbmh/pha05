@@ -13,9 +13,13 @@ function updateUponDonation(cardNo) {
       isNaN(Number(inputAmount.value))
     ) {
       inputAmount.value = '';
-      alert('type donation amount, eg:500');
+      alert('type donation amount above 0, eg:500');
       return;
-    } else {
+    }else if (Number(inputAmount.value) > userBalanceNumber){
+      alert('Insufficient balance');
+      return;
+    }
+     else {
       totalBalanceNumber1 += Number(inputAmount.value);
       totalBalance1.innerText = totalBalanceNumber1;
       userBalanceNumber -= Number(inputAmount.value);
@@ -29,7 +33,9 @@ function updateUponDonation(cardNo) {
       }</h3>
           <p class="text-sm text-lightText">Date : ${Date()}</p>
 `;
-      historyAdd.prepend(donationData);
+
+getElem('noDonation').classList.add('hidden');
+historyAdd.prepend(donationData);
       inputAmount.value = '';
       let modal = `my_modal_${cardNo}`;
       // modal.showModal();
