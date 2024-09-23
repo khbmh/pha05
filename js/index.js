@@ -1,7 +1,6 @@
 const donateHideShowBtn = getElem('donate-hide-show-btn');
 const historyHideShowBtn = getElem('history-hide-show-btn');
 const hideShowBtns = getElem('hide-show-btns');
-
 const donationContainer = getElem('donation-container');
 const historyContainer = getElem('history-container');
 
@@ -25,10 +24,15 @@ hideShowBtns.addEventListener('click', function (event) {
   }
 });
 
+const userBalance = getElem('user-balance');
+let userBalanceNumber = Number(userBalance.innerText);
+
+const historyAdd = getElem('history-add');
 
 
-
-
+updateUponDonation(1);
+updateUponDonation(2);
+updateUponDonation(3);
 
 /*
 ---- blog page ----
